@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Download facebook videos for free using Facebook Video Downloader Online">
+    <meta name="author" content="SeikuDev">
+    <title>Facebook Video Downloader Online</title>
+
+    <!-- <link rel="canonical" href="https://getbootstrap.com/examples/cover/"> -->
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename = '/css/bootstrap.min.css') }}" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <meta name="theme-color" content="#563d7c">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename = '/cover.css') }}" rel="stylesheet">
+</head>
+
+<body class="text-center">
+    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <a  href="/"><h4 class="masthead-brand">Facebook Video Downloader Online</h4></a>
+                <!-- <h4 class="masthead-brand">Facebook Video Downloader Online</h4> -->
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link active" href="/">Home</a>
+                    <a class="nav-link" href="/about">About</a>
+                    <a class="nav-link" href="/terms-conditions">Terms & Conditions</a>
+                </nav>
+            </div>
+        </header>
+
+        <main role="main" class="inner cover text-center">
+            <h1 class="cover-heading">Facebook Video Downloader Online</h1>
+            <p class="lead">Download Videos From Facebook</p>
+            <p class="lead pt-1">
+                <form  action="/download" method="post">
+                    <input type="text" class="form-control text-center" placeholder="Enter video url here" name="url">
+                    <button type="submit " class="btn btn-success mt-3">Download</button>
+                </form>
+            </p>
+        </main>
+
+        <footer class="mastfoot mt-auto text-center">
+            <div class="inner">
+                <p>Facebook Video Downloader Online by <a
+                        href="https://github.com/SeikuDev">SeikuDev</a>.</p>
+                        <p> &copy; 2021 SeikuDev</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
